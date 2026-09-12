@@ -1,0 +1,61 @@
+brand: AppleSupport
+
+intents:
+
+  - name: battery_power
+    description: >
+      Battery drain, charging problems, battery percentage anomalies,
+      or unexpected shutdown related to power.
+
+  - name: ios_software_issue
+    description: >
+      General iOS or operating-system problems such as failed updates,
+      system crashes, freezing, instability, or broad system performance
+      degradation.
+
+  - name: app_service_issue
+    description: >
+      A specific application or Apple software service is malfunctioning,
+      including Messages, Apple Music, Camera, Safari, Activity, and
+      similar services.
+
+  - name: keyboard_input_issue
+    description: >
+      Keyboard, typing, autocorrect, text-entry, or character-rendering
+      problems, including unexpected symbols appearing while typing.
+
+  - name: device_hardware_issue
+    description: >
+      Physical or device-level malfunction such as a device not powering
+      on, defective hardware, or a clear hardware failure.
+
+  - name: account_security
+    description: >
+      Apple ID, account access, authentication, stolen-device, security,
+      or iCloud account concerns.
+
+  - name: activation_setup
+    description: >
+      Problems activating, setting up, registering, or initially
+      configuring an Apple device.
+
+  - name: feature_how_to
+    description: >
+      Questions asking how to use, enable, disable, configure, or locate
+      an Apple feature or setting.
+
+  - name: purchase_order
+    description: >
+      Product purchases, reservations, order problems, or purchasing
+      issues.
+
+  - name: accessories
+    description: >
+      Problems or questions involving chargers, AirPods, cables,
+      keyboards as hardware, or other accessories.
+
+  - name: other_unclear
+    description: >
+      The message is genuinely too vague, incomplete, image-only,
+      link-only, or lacks enough context to identify the customer's
+      primary issue.

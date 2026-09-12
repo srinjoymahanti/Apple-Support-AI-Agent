@@ -1,0 +1,48 @@
+battery_power:
+  - "My battery is draining really fast."
+  - "Why does my phone die while it still says 40 percent?"
+  - "My phone battery keeps going down while charging."
+
+ios_software_issue:
+  - "My phone keeps freezing after the latest update."
+  - "The update won't finish."
+  - "Everything is running slowly after iOS updated."
+
+app_issue:
+  - "Apple Music keeps crashing."
+  - "My iMessages won't send."
+  - "Why does my camera keep doing this?"
+
+device_hardware_issue:
+  - "My iPhone won't turn on."
+  - "My Mac died after the update."
+  - "My charger stopped working."
+
+account_security:
+  - "My phone was stolen and I need help with my Apple ID."
+  - "Someone accessed my account."
+  - "How do I recover my Apple account?"
+
+activation_setup:
+  - "I've been trying to activate my new iPhone."
+  - "Why won't my new phone activate?"
+
+feature_how_to:
+  - "How do I enable Night Mode?"
+  - "How do I force restart my iPhone?"
+  - "How do I disable Apple Pay from the lock screen?"
+
+purchase_order:
+  - "My iPhone X reservation isn't working."
+  - "Where is my iPhone order?"
+  - "How can I purchase an iPhone?"
+
+accessories:
+  - "Can I charge my AirPods case with the earbuds inside?"
+  - "My Apple charger stopped charging."
+  - "My keyboard keeps disconnecting."
+
+other_unclear:
+  - "Help!"
+  - "What's going on?"
+  - "Can someone fix this?"
