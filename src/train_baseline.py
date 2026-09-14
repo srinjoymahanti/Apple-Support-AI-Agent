@@ -27,6 +27,10 @@ VECTORIZER_OUTPUT = Path(
     "data/processed/tfidf_vectorizer.joblib"
 )
 
+PREDICTIONS_OUTPUT = Path(
+    "data/processed/tfidf_test_predictions.csv"
+)
+
 RANDOM_STATE = 42
 TEST_SIZE = 0.25
 
@@ -58,11 +62,6 @@ def main() -> None:
     )
 
     # Use ONLY examples that have been manually verified.
-    df["human_verified"] = (
-        df["human_verified"]
-        .fillna(False)
-        .astype(bool)
-    )
 
     df = df[
         (df["human_intent"] != "")
@@ -233,6 +232,39 @@ def main() -> None:
 
     predictions = model.predict(
         X_test_tfidf
+    )
+
+    # ---------------------------------------------------------
+    # Save test-set predictions for error analysis
+    # ---------------------------------------------------------
+
+    test_predictions = pd.DataFrame(
+        {
+            "tweet_id": df.loc[X_test.index, "tweet_id"].values,
+            "text": X_test.values,
+            "actual_intent": y_test.values,
+            "predicted_intent": predictions,
+        }
+    )
+
+    test_predictions["correct"] = (
+        test_predictions["actual_intent"]
+        == test_predictions["predicted_intent"]
+    )
+
+    PREDICTIONS_OUTPUT.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    test_predictions.to_csv(
+        PREDICTIONS_OUTPUT,
+        index=False,
+    )
+
+    print(
+        f"\nSaved test predictions to: "
+        f"{PREDICTIONS_OUTPUT}"
     )
 
     # ---------------------------------------------------------

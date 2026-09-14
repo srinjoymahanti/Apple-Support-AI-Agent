@@ -72,3 +72,11 @@ Return JSON only:
   "intent": "one_of_the_intents_above",
   "confidence": 0.0
 }
+
+- Classify by the underlying problem, not merely the wording of the request.
+  For example, "how do I fix the keyboard bug?" is keyboard_input_issue,
+  not feature_how_to.
+
+- If a message mentions an iOS update but the actual problem is a specific
+  app, keyboard, or accessory, classify the specific problem instead of
+  ios_software_issue.

@@ -30,7 +30,8 @@ MAX_RETRIES = 5
 VALID_INTENTS = {
     "battery_power",
     "ios_software_issue",
-    "app_issue",
+    "app_service_issue",
+    "keyboard_input_issue",
     "device_hardware_issue",
     "account_security",
     "activation_setup",
@@ -166,8 +167,8 @@ def classify_message(
         except RateLimitError as exc:
 
             wait_time = min(
+                60,
                 2 ** attempt,
-                10,
             )
 
             print(
