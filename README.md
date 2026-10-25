@@ -255,7 +255,7 @@ hiver-support-agent/
 ### 1. Clone
 
 ```bash
-git clone https://github.com/srinjoymahanti/hiver-support-agent.git
+git clone https://github.com/srinjoymahanti/Apple-support-agent.git
 cd hiver-support-agent
 ```
 
