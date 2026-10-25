@@ -4,7 +4,7 @@ An end-to-end AI customer-support agent built for the Hiver SDE Intern take-home
 
 ## Live Demo
 
-**Streamlit:** `https://hiver-support-agent-srinjoy-mahanti.streamlit.app/`
+**Streamlit:** `https://apple-support-ai-agent-srinjoy-mahanti.streamlit.app/`
 
 ## Overview
 
@@ -221,7 +221,7 @@ These are prototype evaluation results, not production-level guarantees.
 ## Project Structure
 
 ```text
-hiver-support-agent/
+Apple-Support-AI-Agent/
 |
 ├── app.py
 ├── README.md
@@ -255,8 +255,8 @@ hiver-support-agent/
 ### 1. Clone
 
 ```bash
-git clone https://github.com/srinjoymahanti/Apple-support-agent.git
-cd hiver-support-agent
+git clone https://github.com/srinjoymahanti/Apple-Support-AI-Agent
+cd Apple-Support-AI-Agent
 ```
 
 ### 2. Install dependencies
